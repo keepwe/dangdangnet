@@ -2,9 +2,167 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>登录 - 当当网</title>
+		<link rel="icon" href="../img/favicon.ico" type="image/x-icon" style="display: inline-block;width: 16px;height: 16px;">
+		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" style="display: inline-block;width: 16px;height: 16px;">
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
 	</head>
 	<body>
-		ll
+		<!--头部-->
+		<div class="login_head">
+			<a href="../index.html"><img src="../img/logo_login.png"/></a>
+			<div class="imporve">
+				<span></span>
+				<a href="" target="_blank">“登录页面“改进建议</a>
+			</div>
+		</div>
+		<!--中间-->
+		<div class="login_bg">
+			<!--中间左侧-->
+			<a class="click_area" href=""></a>
+			<!--登录框-->
+			<div class="login_box">
+				<div id="login_cheatproof_top" class="new_tip">
+					<div>				
+   					 请勿设置与邮箱及其他网站相同的登录及支付密码，
+    				<a href="http://blog.dangdang.com/?p=22276">谨防诈骗</a>!
+					</div>
+				</div>
+				<div class="swith_btn">
+					<div class="hd">
+						<a class="switch start" href=""></a>
+						<a class="switch quick" href=""></a>
+					</div>
+					<div class="info_remind">
+						<div class="info">
+							<span class="safe_icon"></span>
+							<span id="J_startTip">扫码登录更安全</span>
+							<span id="J_quickTip">密码登录在这里</span>
+							<span class="arrow_icon"></span>
+						</div>
+					</div>
+				</div>
+				<!--登录部分-->
+				<div class="login_message">
+					<p class="password_login">密码登录</p>
+					<!--用户名-->
+					<div class="username">
+						<span class="user_icon"></span>
+						<input class="user" type="text" />
+						<span class="placeholder">邮箱/昵称/手机号码</span>
+					</div>
+					<p id="user_mindstyle" class="tips">
+						<span id="liDivErrorMessage">请输入邮箱/昵称/手机号码</span>
+					</p>
+					<!--密码-->
+					<div class="password_div">
+						<span class="password_icon"></span>
+						<input class="pass" id="txtPassword" type="text" />
+						<span class="placeholder">密码</span>
+					</div>
+					<p id="pass_mindstyle" class="tips">
+						<span id="login_password_error">请填写长度为6-20个字符的密码</span>
+						<span id="passwordCapslock" class="big_tip">键盘大写锁定已打开，请注意大小写!</span>
+					</p>
+					<!--验证码-->
+					<div id="J_rotateVcodeWrap" class="Rotate">
+						<div class="Rotate_operate">
+							<div class="Rotate_prompt">请点击下方图片，旋转至正确方向</div>
+							<div class="error is_visible">请点击下方图片，旋转至正确方向</div> 
+							<a class="Rotate_refresh" href="">换一组</a>
+						</div>
+						<div class="Rotate_background"></div>
+						<div class="Rotate_background"></div>
+						<div class="Rotate_background"></div>
+						<div class="Rotate_background"></div>
+					</div>
+					<!--忘记密码-->
+					<div class="auto_login">
+						<a href="" target="_blank">忘记密码？</a>
+						<input type="checkbox" class="auto_box" name="autologin" id="autologin" value="" />
+						<span class="seven_day">七天内自动登录</span>
+						<span class="safe">请勿在公用电脑上勾选此选项</span>
+					</div>
+					<!--登录按钮-->
+					<div class="login_btn"><a id="submitLoginBtn" href="">登&nbsp;录</a></div>
+					<div class="register">
+						<a id="J_loginToRegister" class="register_btn" href="register.html">立即注册</a>
+						<span class="register_con">使用合作网站登录</span>
+						<span class="partner clearfix" id="share_login">
+							<dl>
+								<dt><a class="qq" id="qqShare" href="">ＱＱ</a></dt>
+								<dt><a class="wx" id="wxShare" href="">微信</a></dt>
+								<dt><a class="wb" id="wbShare" href="">新浪微博</a></dt>
+								<dt><a class="alpay" id="alpayShare" href="">支付宝</a></dt>
+								<dd id="showShareMore"><a href="">更多</a></dd>
+							</dl>
+						</span> 
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!--尾部-->
+		<div id="footer_nav_wrap" class="footer">
+			<div class="footer_nav">
+				<a href="" target="_blank">公司简介</a>
+				<span class="step">|</span>
+				<a href="" target="_blank">诚聘英才</a>
+				<span class="step">|</span>
+				<a href="" target="_blank">手机当当</a>
+				<span class="step">|</span>
+				<a href="" target="_blank">网站联盟</a>
+				<span class="step">|</span>
+				<a href="" target="_blank">当当招商</a>
+				<span class="step">|</span>
+				<a href="" target="_blank">机构销售</a>
+				<span class="step">|</span>
+				<a href="" target="_blank">官方Blog</a>
+			</div>
+			<div class="footer_copy">
+				<span>Copyright (C) 当当网 2004-2017, All Rights Reserved</span>
+			</div>
+			<div class="footer_copyright">
+				<span>
+					<a href="" target="_blank">京ICP证041189号</a>
+				</span>
+				<span class="step">|</span>
+				<span>出版物经营许可证 新出发京批字第直0673号</span>
+				<span class="step">|</span>
+				<span>食品流通许可证：SP1101011010021855(1-1)</span>
+				<br />
+				<span>互联网药品信息服务资格证编号：(京)-非经营性-2012-0016</span>
+				<span class="step">|</span>
+				<span>京公网安备110101000001号</span>
+				<br />
+			</div>
+			<div class="footer_icon">
+				<div class="validator logo1">
+					<a href=""><img src="../img/validate_footer.gif"></a>
+				</div>
+				<div class="validator logo2">
+					<a href=""><img src="../img/footer2.png"></a>
+				</div>
+				<div class="validator logo3">
+					<a href=""><img src="../img/brand_footer.png"></a>
+				</div>
+			</div>
+		</div>
+		<!--防骗弹出窗-->
+		<div class="masks" id="J_loginMask">
+			<iframe class="masks_bg"></iframe>
+			<div class="pop_cheat">
+				<h3>安全提醒</h3>
+				<div class="pop_cheat_info clearfix">
+						<span class="right">
+							当当平台及销售商
+							<b>不会以任何理由，要求您点击任何网址链接进行退款或支付操作。</b>
+							当当客服电话400-106-6666，0527-80878888。
+						</span>
+				</div>
+				<div class="pop_btn"><a href="">知道了</a></div>
+			</div>
+		</div>
 	</body>
 </html>
