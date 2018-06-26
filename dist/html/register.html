@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>新用户注册-当当网</title>
 		<link rel="icon" href="../img/favicon.ico" type="image/x-icon" style="display: inline-block;width: 16px;height: 16px;">
 		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" style="display: inline-block;width: 16px;height: 16px;">
 		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
@@ -44,11 +44,84 @@
 		<form id="register_form"  method="post">
 			<div id="bd">
 				<div class="shadow_box">
-					<div class="register_box"></div>
+					<div class="register_box">
+						<div class="register_box_head">
+							<a href="" class="head_a head_a1">新用户注册</a>
+							<a href="" class="head_a">企业用户注册</a>
+							<span class="dd_more">
+								<a href="" class="home"> 当当首页</a>
+								<a href="">注册帮助</a>
+							</span>
+						</div>
+						<div class="help_icon_trigger"><a class="feed_back" title="联系客服" href=""></a></div>
+						<div class="register_box_body">
+							<div id="J_cheatProofTop" class="new_tip">
+								<div>
+   									 贴心提示：请勿设置与邮箱密码相同的账户登录密码或支付密码，防止不法分子窃取您的当当账户信息，
+    								<a class="tipss" href="">谨防诈骗</a>!
+								</div>
+							</div>
+							<table border="0" cellspacing="0" cellpadding="0" width="100%">
+								<tbody>
+									<tr>
+										<td class="tellpone">手机号码</td>
+										<td class="tp_box">
+											<input class="phone_register" type="text" placeholder="请输入您的手机号码"/>
+											<span id="spn_repassword_ok" class="icon_wrong"></span>
+											<span id="J_tipUsername" class="cue_warn">手机号可用于登录、找回密码、接收订单通知等服务</span>
+										</td>
+									</tr>
+									<tr>
+										<td class="tellpone">登录密码</td>
+										<td class="tp_box">
+											<input class="phone_register" type="password" placeholder=""/>
+											<span id="spn_repassword_ok" class="icon_wrong"></span>
+											<span id="J_tipUsername" class="cue_warn"><!--密码为6-20个字符，可由英文、数字及符号组成--></span>
+										</td>
+									</tr>
+									<tr>
+										<td class="tellpone">确认密码</td>
+										<td class="tp_box">
+											<input class="phone_register" type="password" placeholder=""/>
+											<span id="spn_repassword_ok class="icon_wrong""></span>
+											<span id="J_tipUsername" class="cue_warn"><!--请再次输入密码--></span>
+										</td>
+									</tr>
+									<tr>
+										<td class="tellpone">验证码</td>
+										<td class="tp_box">
+											<input class="phone_register" id="txt_vcode" type="password" placeholder="请输入验证码"/>
+											<a href="" class="code_pic" title="点击更换验证码"><img id="imgVcode" src="p/tmp_proxy.php?t=1529982653458"/></a>
+											<a href="" id="vcodeImgBtn" class="code_picww">换张图</a>
+											<span id="spn_repassword_ok class="icon_wrong""></span>
+											<span id="J_tipUsername" class="cue_warn"></span>
+										</td>
+									</tr>
+									<tr>
+										<td class="tellpone clause_t">&nbsp</td>
+										<td class="clause">
+											<span class="float_l">
+												<input type="checkbox" name="chb_agreement" id="chb_agreement" value="" />
+												我已阅读并同意
+												<a href="">《当当交易条款》</a>和
+												<a href="">《当当社区条款》</a>
+											</span>
+											<span id="J_tipUsername" class="cue">您必须同意当当服务条款后，才能提交注册。</span>
+										</td>
+									</tr>
+									<tr>
+										<td class="tellpone">&nbsp</td>
+										<td class="tp_box">
+											<a id="J_submitRegister" href="" class="btn_login">立即注册</a>
+											<a id="J_submitRegisterUnclick" href="" class="btn_login">注册中...</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
 			</div>
-			
-			<input type="submit" value=""/>
 		</form>
 		
 		
