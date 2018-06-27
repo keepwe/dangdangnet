@@ -7,6 +7,13 @@
 		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" style="display: inline-block;width: 16px;height: 16px;">
 		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/login-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+		<!--<script>
+			document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+			':35729/livereload.js?snipver=1"></' + 'script>')
+		</script>-->
 	</head>
 	<body>
 		<!--头部-->
@@ -50,7 +57,7 @@
 					<div class="username">
 						<span class="user_icon"></span>
 						<input class="user" type="text" />
-						<span class="placeholder">邮箱/昵称/手机号码</span>
+						<!--<span class="placeholder">邮箱/昵称/手机号码</span>-->
 					</div>
 					<p id="user_mindstyle" class="tips">
 						<span id="liDivErrorMessage">请输入邮箱/昵称/手机号码</span>
@@ -58,8 +65,8 @@
 					<!--密码-->
 					<div class="password_div">
 						<span class="password_icon"></span>
-						<input class="pass" id="txtPassword" type="text" />
-						<span class="placeholder">密码</span>
+						<input class="pass" id="txtPassword" type="password" />
+						<!--<span class="placeholder">密码</span>-->
 					</div>
 					<p id="pass_mindstyle" class="tips">
 						<span id="login_password_error">请填写长度为6-20个字符的密码</span>
@@ -85,7 +92,7 @@
 						<span class="safe">请勿在公用电脑上勾选此选项</span>
 					</div>
 					<!--登录按钮-->
-					<div class="login_btn"><a id="submitLoginBtn" href="">登&nbsp;录</a></div>
+					<div class="login_btn"><span id="submitLoginBtn" href="">登&nbsp;录</span></div>
 					<div class="register">
 						<a id="J_loginToRegister" class="register_btn" href="register.html">立即注册</a>
 						<span class="register_con">使用合作网站登录</span>

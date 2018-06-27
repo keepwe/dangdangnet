@@ -1,0 +1,1 @@
+"use strict";$(function(){$("#submitLoginBtn").click(function(){$.get("http://datainfo.duapp.com/shopdata/userinfo.php",{status:"login",userID:$(".user").val(),password:$("#txtPassword").val()},function(t){t=JSON.parse(t),console.log(t),0==t?alert("用户名不存在"):2==t?alert("用户名或者密码错误"):($.cookie("username",t.userID,{expires:7,path:"/"}),location.href="../index.html")})})});

@@ -1,5 +1,13 @@
 ;(function(){
 	$(function(){
+		//侧边栏
+		$("#menulist_content li").hover(function(){
+			var index = $(this).index();
+			$(".new_pub_nav_pop").eq(index).css("display","block")
+		},function(){
+			var index = $(this).index();
+			$(".new_pub_nav_pop").eq(index).css("display","none")
+		})
 		//banner图
 		$(function(){
 			$("#sliderBox").slider({
@@ -19,6 +27,10 @@
 				},function(){
 					$(".btn_l").animate({"opacity":".2"},100).next().animate({"opacity":".2"},100)
 			});
+			//banner下面轮播
+			$(".tehua_box .btn_y").click(function(){
+				$("#Cbanner2").animate({"z-index":"9px"},1000).siblings().css("z-index","-9px")
+			})
 			//home右边公告栏信息------注意还有一个轮播效果没写
 			$(".tab_aa>li").hover(function(){
 				var index = $(this).index();
@@ -48,16 +60,35 @@
 		//左侧楼梯
 		
 		$(window).scroll(function(){
-			
 			var scrollTop = $(this).scrollTop();
-			if(scrollTop>160){
+			if(scrollTop>160 && scrollTop < 6500){
 				$(".louti_box").fadeIn();
-			}else(scrollTop>300){
+			}else{
 				$(".louti_box").fadeOut();
 			}
-			
-			
 		})
+		
+		$(function(){
+			function maoji(name){
+				$(name).click(function(){
+	                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+	                    var $target = $(this.hash);
+	                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+	                    if ($target.length) {
+	                        var targetOffset = $target.offset().top;
+		                    $('html,body').animate({scrollTop: targetOffset},500);
+		                    return false;
+	                    }
+	                }
+          		 })
+			}
+			maoji(".f1");
+			maoji(".f2");
+            maoji(".f3");
+            maoji(".f4");
+            maoji(".f5");
+            maoji(".back_top");
+        });
 		
 		
 		//右侧浮动条广告
@@ -90,7 +121,18 @@
 		})
 		
 		
-	})
+		$(function(){
+				$.get("http://datainfo.duapp.com/shopdata/getclass.php",function(data){
+					data = JSON.parse(data);
+					console.log(data);
+					var str = "";
+					$.each(data,function(index,item){
+						str += `<a href="list.html?classID=${item.classID}">${item.className}</a>`;
+					})
+						$(".snew_pub_nav").html(str);
+					})
+				})
+		})
 	
 })()
 

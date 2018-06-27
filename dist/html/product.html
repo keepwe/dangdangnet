@@ -1,15 +1,620 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!--青春文学_畅销青春文学类图书【书城 排行榜 正版 价格】-当当网-->
 		<meta charset="UTF-8">
-		<title>青春文学_畅销青春文学类图书【书城 排行榜 正版 价格】-当当网</title>
-		<!--商品分类页-->
+		<title>当当商品-分类页</title>
 		<link rel="icon" href="../img/favicon.ico" type="image/x-icon" style="display: inline-block;width: 16px;height: 16px;">
 		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" style="display: inline-block;width: 16px;height: 16px;">
 		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/product.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/product-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 	</head>
 	<body>
-		222
+		<!--header-->
+			<div id="hd_wrap">
+				<!--第一行，头部信息-->
+				<div id="hd">
+					<div id="tool">
+					<div class="ddheader_area fl">
+						<a class="area_arrive" href="">送至：
+							<span id="current_area">北京</span>
+						</a>						
+						<ul class="ddheader_area_list " >
+							<span class="line"></span>
+							<li><a href="">北京</a></li>
+							<li><a href="">天津</a></li>
+							<li><a href="">河北</a></li>
+							<li><a href="">山西</a></li>
+							<li><a href="">内蒙古</a></li>
+							<li><a href="">辽宁</a></li>
+							<li><a href="">吉林</a></li>
+							<li><a href="">黑龙江</a></li>
+							<li><a href="">上海</a></li>
+							<li><a href="">江苏</a></li>
+							<li><a href="">浙江</a></li>
+							<li><a href="">安徽</a></li>
+							<li><a href="">福建</a></li>
+							<li><a href="">江西</a></li>
+							<li><a href="">山东</a></li>
+							<li><a href="">河南</a></li>
+							<li><a href="">湖北</a></li>
+							<li><a href="">湖南</a></li>
+							<li><a href="">广东</a></li>
+							<li><a href="">广西</a></li>
+							<li><a href="">海南</a></li>
+							<li><a href="">重庆</a></li>
+							<li><a href="">四川</a></li>
+							<li><a href="">贵州</a></li>
+							<li><a href="">云南</a></li>
+							<li><a href="">西藏</a></li>
+							<li><a href="">陕西</a></li>
+							<li><a href="">甘肃</a></li>
+							<li><a href="">青海</a></li>
+							<li><a href="">宁夏</a></li>
+							<li><a href="">新疆</a></li>
+							<li><a href="">台湾</a></li>
+							<li><a href="">香港</a></li>
+							<li><a href="">澳门</a></li>
+							<li><a href="">钓鱼岛</a></li>
+						</ul>
+					</div>
+					<ul class="ddhead_nav">
+						<li>
+							<a target="_blank" href="" name="我的云书房">
+								我的云书房
+							</a>
+						</li>
+						<li class="my_dd">
+							<a target="_blank" href="" name="我的当当">
+								我的当当
+								<img class="xia" src="../img/xia.png"/>
+								<img class="shang" src="../img/shang.png"/>
+							</a>
+							<ul >
+								<span class="line">	
+								</span>
+								<li><a href="">积分抵现</a></li>
+								<li><a href="">我的收藏</a></li>
+								<li><a href="">我的余额</a></li>
+								<li><a href="">我的评论</a></li>
+								<li><a href="">礼券/礼品卡</a></li>
+							</ul>
+						</li>
+						<li>
+							<a target="_blank" href="" name="小说投稿">
+								小说投稿
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="" name="我要出书">
+								我要出书
+							</a>
+						</li>
+						<li class="caigou">
+							<a target="_blank" href="" name="企业采购">
+								企业采购
+								<img class="xia" src="../img/xia.png"/>
+								<img class="shang" src="../img/shang.png"/>
+							</a>
+							<ul>
+								<span class="line">	
+								</span>
+								<li><a href="">大宗采购</a></li>
+								<li><a href="">礼品卡采购</a></li>
+								<li><a href="">礼品卡激活</a></li>
+								<li><a href="">礼品卡使用</a></li>
+								<li><a href="">3C数码团购</a></li>
+							</ul>
+						</li>
+						<li class="serve">
+							<a target="_blank" href="" name="客户服务">
+								客户服务
+								<img class="xia" src="../img/xia.png"/>
+								<img class="shang" src="../img/shang.png"/>
+							</a>
+							<ul>
+								<span class="line">	
+								</span>
+								<li><a href="">帮助中心</a></li>
+								<li><a href="">自动退换货</a></li>
+								<li><a href="">自助发票</a></li>
+								<li><a href="">联系客服</a></li>
+								<li><a href="">我要投诉</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="ddhead_operate fr">
+						<span class="ddhead_welcome">欢迎光临当当，请</span>
+						<a class="login_links" href="login.html">登录</a> 
+						<a class="zhuce_links" href="register.html">成为会员</a>
+					</div>
+				</div>
+				</div>
+			</div>	
+		<!--logo和搜索，购物车-->
+			<div id="logo">
+				<div class="logo_line">
+					<a href="../index.html"><img src="../img/logo.png"/></a>
+				</div>
+				<div class="search">
+					<form method="get">
+						<label for="key_s"></label>
+						<input type="text" name="key_s" id="key_s" value="20万图书，每满100减40" />
+						<span class="select">
+							<span id="show_category_name">全部分类</span>
+							<span class="icon"></span>
+							<div id="search_all_category">
+								<a href="">
+									<span id="show_Category_Name">
+										全部分类
+									</span>
+								</a>
+								<a href="">
+									<span>尾品汇</span>
+								</a>
+								<a href="">
+									<span>图书</span>
+								</a>
+								<a href="">
+									<span>电子书</span>
+								</a>
+								<a href="">
+									<span>音像</span>
+								</a>
+								<a href="">
+									<span>影视</span>
+								</a>
+								<a href="">
+									<span>时尚美妆</span>
+								</a>
+								<a href="">
+									<span>母婴用品</span>
+								</a>
+								<a href="">
+									<span>玩具</span>
+								</a>
+								<a href="">
+									<span>孕婴服饰</span>
+								</a>
+								<a href="">
+									<span>童装童鞋</span>
+								</a>
+								<a href="">
+									<span>家居日用</span>
+								</a>
+								<a href="">
+									<span>家具装饰</span>
+								</a>
+								<a href="">
+									<span>服装</span>
+								</a>
+								<a href="">
+									<span>鞋</span>
+								</a>
+								<a href="">
+									<span>箱包皮具</span>
+								</a>
+								<a href="">
+									<span>手表饰品</span>
+								</a>
+								<a href="">
+									<span>运动户外</span>
+								</a>
+								<a href="">
+									<span>汽车用品</span>
+								</a>
+								<a href="">
+									<span>食品</span>
+								</a>
+								<a href="">
+									<span>手机通讯</span>
+								</a>
+								<a href="">
+									<span>数码影音</span>
+								</a>
+								<a href="">
+									<span>电脑办公</span>
+								</a>
+								<a href="">
+									<span>大家电</span>
+								</a>
+								<a href="">
+									<span>家用电器</span>
+								</a>
+							</div>
+						</span>
+						<input type="button" name="search_btn" id="search_btn" value="" />
+					</form>
+				</div>
+				<div class="search_bottom">
+					<div class="search_hot">
+						热搜: 
+						<a href="" name="hotword"  target="_blank" >FOREO</a>
+						<a href="" name="hotword"  target="_blank" >敏感小孩</a>
+						<a href="" name="hotword"  target="_blank" >张剑黄皮书</a>
+						<a href="" name="hotword"  target="_blank" >迪士尼童鞋</a>
+						<a href="" name="hotword"  target="_blank" >养育男孩</a>
+						<a href="" name="hotword"  target="_blank" >神奇火车</a>
+					</div>
+					<a target="_blank" class="search_advs" href="">高级搜索</a>
+				</div>
+				<!--搜索自动补全内容框-->
+				<div id="suggest_key" style="display: none;"></div> 
+				<div class="dd_cart">
+					<a href="shopping.html" name="购物车">
+						<i class="icon_card"></i>
+						购物车
+						<b id="cart_items_count">0</b>
+					</a>
+				</div>
+				<div class="dd_order">
+					<a href="" name="我的订单">
+						我的订单
+						<b id="unpaid_num"></b>
+					</a>
+				</div>
+			</div>
+			<div id="nav_top_wrap">	
+				<div id="nav_top">
+					<ul>
+						<li class="all_products">
+							<a href="html/product.html" target="_blank">全部商品分类</a>
+						</li>
+						<li>
+							<a href="" target="_blank">尾品汇</a>
+						</li>
+						<li>
+							<a href="">图书</a>
+						</li>
+						<li>
+							<a href="">电子书</a>
+						</li>
+						<li>
+							<a href="">网络文学</a>
+						</li>
+						<li>
+							<a href="">服装</a>
+						</li>
+						<li>
+							<a href="">运动户外</a>
+						</li>
+						<li>
+							<a href="">孕婴童</a>
+						</li>
+						<li>
+							<a href="">家居</a>
+						</li>
+						<li>
+							<a href="">当当优品</a>
+						</li>
+						<li>
+							<a href="">食品</a>
+						</li>
+						<li>
+							<a href="">Apple</a>
+						</li>
+						<li>
+							<a href="">电器城</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		<!--main-->
+		<div class="sub">
+			<ul>
+				<li><a href="">童书榜</a></li>
+				<li><a href="">女装热卖</a></li>
+				<li><a href="">男士服装</a></li>
+				<li><a href="">童装</a></li>
+				<li><a href="">运动户外</a></li>
+				<li><a href="">帆布鞋</a></li>
+				<li><a href="">箱包皮具</a></li>
+				<li><a href="">奶粉</a></li>
+				<li><a href="">美妆</a></li>
+				<li><a href="">生鲜</a></li>
+				<li><a href="">玩具童车</a></li>
+				<li><a href="">电子教育</a></li>
+			</ul>
+		</div>
+		<div class="product_bd">
+			<div class="con">
+				<div class="dd_area">
+					<div class="crumbs_fb clearfix">
+						<div class="crumbs_fb_left">
+							<a href="" class="fl">全部</a>
+							<span class="fl you">&gt;</span>
+							<a href="" class="fl">图书</a>
+							<span class="fl you">&gt;</span>
+							<a class="cfl_san" href="">青春文学</a>
+							<span class="sp fl">共<em>68738</em>件商品</span>
+						</div>
+					</div>
+				</div>
+				<div class="filtrate_list_box">
+					<ul class="filtrate_list">
+						<li>
+							<div class="list_left">分类</div>
+							<div class="list_right">
+								<div class="lr_box">
+									<span><a href="">古代言情</a></span>
+									<span><a href="">爱情/情感</a></span>
+									<span><a href="">叛逆/成长</a></span>
+									<span><a href="">玄武/新武侠/魔幻</a></span>
+									<span><a href="">穿越/重生/架空</a></span>
+									<span><a href="">校园</a></span>
+									<span><a href="">大陆原创</a></span>
+									<span class="list_list list_more"><a href="">更多</a></span>
+									<span class="list_list list_shou"><a href="">收起</a></span>
+								</div>
+							</div>
+						</li>
+						<li class="filtrate_list_more hide">
+							<div class="list_left">&nbsp;</div>
+							<div class="list_right">
+								<div class="lr_box">
+									<span><a href="">古代言情</a></span>
+									<span><a href="">爱情/情感</a></span>
+									<span><a href="">叛逆/成长</a></span>
+									<span><a href="">玄武/新武侠/魔幻</a></span>
+									<span><a href="">穿越/重生/架空</a></span>
+									<span><a href="">校园</a></span>
+									<span><a href="">大陆原创</a></span>
+									<span><a href=""></a></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="list_left">价格</div>
+							<div class="list_right">
+								<div class="lr_box">
+									<span><a href="">0-9</a></span>
+									<span><a href="">9-19</a></span>
+									<span><a href="">19-49</a></span>
+									<span><a href="">49以上</a></span>
+									<span><a href=""></a></span>
+									<span><a href=""></a></span>
+									<span><a href=""></a></span>
+									<span><a href=""></a></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="list_left">客户评分</div>
+							<div class="list_right">
+								<div class="lr_box">
+									<span><a href="">5星</a></span>
+									<span><a href="">4星以上</a></span>
+									<span><a href="">3星以上</a></span>
+									<span><a href="">2星以上</a></span>
+									<span><a href="">1星以上</a></span>
+									<span><a href=""></a></span>
+									<span><a href=""></a></span>
+									<span><a href=""></a></span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="list_left">折扣</div>
+							<div class="list_right">
+								<div class="lr_box">
+									<span><a href="">3折以下</a></span>
+									<span><a href="">3-5折</a></span>
+									<span><a href="">5-7折</a></span>
+									<span><a href="">7折以上</a></span>
+									<span><a href=""></a></span>
+									<span><a href=""></a></span>
+									<span><a href=""></a></span>
+									<span><a href=""></a></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="totle_top">
+					<ul class="sorting_box">
+						<li><a href="">综合排序</a></li>
+						<li>
+							<a href="">销量</a>
+							<span class="icon_sort"></span>
+						</li>
+						<li class="good_task">
+							<a href="">好评</a>
+							<span class="icon_sort"></span>
+						</li>
+						<li class="public_time">
+							<a href="">出版时间</a>
+							<span class="icon_sort"></span>
+						</li>
+						<li>
+							<div class="price">价格</div>
+						</li>
+						<li>
+							<input type="txt" class="price_area" value="" />
+							<input type="txt" class="price_area" value="" />
+						</li>
+						<li>
+							<div>配送至：</div>
+						</li>
+					</ul>
+					<div class="bottom">
+						
+					</div>
+					<div class="switch"></div>
+					<div class="data"></div>
+				</div>
+			</div>
+			<div class="shoping_list">
+				<div class="shoping_list_left">
+					<ul class="bigimg">
+						<li class="line1">
+							<a href=""><img src="../img/pro1.jpg"/></a>
+							<p class="name">
+								<a href=""> 爵迹3：冷血狂宴（郭敬明作品。水源亚斯蓝王爵使徒的终极一战。当当首发独家纪念印章版并赠送原著电子稿摘选）郭敬明奇幻巨作《爵迹》系列作品第三部《爵迹：冷血狂宴》，众多读者期待的崭新剧情。水源亚斯蓝王爵使徒的终极一战，奏响ZUI后的狂想曲。用我浴血双手，捧起迎你归来的冠冕。</a>
+							</p>
+							<p class="detail">★郭敬明奇幻巨作《爵迹》系列作品第三部《爵迹：冷血狂宴》，众多读者期待的崭新剧情，网络讨论量多年居高不下。 ★水源亚斯蓝帝国王爵和使徒们的终极一战，奏响ZUI后的狂想曲。 ★腥风开荆，血雨斩棘，所有狂热和激烈的战斗，所有埋下的伏笔隐线 多年前囚禁吉尔伽美什的真相，皇室家族血脉的秘密，白银祭司下达杀戮和囚禁指令的目的 将在此部中一一展开。 ★在气势磅礴、勾魂摄魄的永生岛之战后，新的闪耀人物登陆亚斯蓝帝国，随着情节的深入，引发新一轮的矛盾和冲突，呈现出变幻莫测的剧情走向。那么接下来，就是真正的冷血狂宴的开始了。 ★错综复杂的情感、鲜明生动的人物、奇特百变的魂器，以及柔韧精准的写作手法、浓稠深厚的文字底蕴，带来震撼感官的阅读体验。 ★用浴血的双手，捧起尊贵的冠冕，迎你归来，我的灵犀。</p>
+							<p class="price"></p>
+							<div class="lable_label">
+								<span class="new_lable">
+									<span>当当自营</span>
+									<span>包邮</span>
+									<span>预售</span>
+								</span>
+							</div>
+						</li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="col_goods">
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--footer-->
+		<footer>
+			<div class="footer_pic_new">
+				<div class="footer_pic_new_inner">
+					<a class="footer_1">
+						<span></span>
+					</a>
+					<a class="footer_2">
+						<span></span>
+					</a>
+					<a class="footer_3">
+						<span></span>
+					</a>
+					<a class="footer_4">
+						<span></span>
+					</a>
+				</div>
+				<div class="public_footer_new">
+					<div class="footer_nvice">
+						<span class="ftitle">购物指南</span>
+						<ul>
+							<li><a href="">购物流程</a></li>
+							<li><a href="">发票制度</a></li>
+							<li><a href="">账户管理</a></li>
+							<li><a href="">会员优惠</a></li>
+						</ul>
+					</div>
+					<div class="footer_pay">
+						<span class="ftitle">支付方式</span>
+						<ul>
+							<li><a href="">货到付款</a></li>
+							<li><a href="">网上支付</a></li>
+							<li><a href="">礼品卡支付</a></li>
+							<li><a href="">银行转帐</a></li>
+						</ul>
+					</div>
+					<div class="footer_characteristic">
+						<span class="ftitle">订单服务</span>
+						<ul>
+							<li><a href="">配送服务查询</a></li>
+							<li><a href="">订单状态说明</a></li>
+							<li><a href="">自助取消订单</a></li>
+							<li><a href="">自助修改订单</a></li>
+						</ul>
+					</div>
+					<div class="footer_distribution">
+						<span class="ftitle">配送方式</span>
+						<ul>
+							<li><a href="">当日递</a></li>
+							<li><a href="">次日达</a></li>
+							<li><a href="">订单自提</a></li>
+							<li><a href="">验货与签收</a></li>
+						</ul>
+					</div>
+					<div class="footer_help">
+						<span class="ftitle">退换货</span>
+						<ul>
+							<li><a href="">退换货服务查询</a></li>
+							<li><a href="">自助申请退换货</a></li>
+							<li><a href="">退换货进度查询</a></li>
+							<li><a href="">退款方式和时间</a></li>
+						</ul>
+					</div>
+					<div class="footer_shangjia">
+						<span class="ftitle">商家服务</span>
+						<ul>
+							<li><a href="">商家中心</a></li>
+							<li><a href="">运营服务</a></li>
+							<li><a href="">加入尾品汇</a></li>
+						</ul>
+					</div>	
+				</div>
+				<div id="footer_nav_wrap">
+					<div class="footer_nav">
+						<a href="" target="_blank">公司简介</a>
+						<span class="step">|</span>
+						<a href="" target="_blank">诚聘英才</a>
+						<span class="step">|</span>
+						<a href="" target="_blank">网站联盟</a>
+						<span class="step">|</span>
+						<a href="" target="_blank">当当招商</a>
+						<span class="step">|</span>
+						<a href="" target="_blank">机构销售</a>
+						<span class="step">|</span>
+						<a href="" target="_blank">手机当当</a>
+						<span class="step">|</span>
+						<a href="" target="_blank">官方Blog</a>
+						<span class="step">|</span>
+						<a href="" target="_blank">热词搜索</a>
+					</div>
+					<div class="footer_copy">
+						<span>Copyright (C) 当当网 2004-2017, All Rights Reserved</span>
+					</div>
+					<div class="footer_copyright">
+						<span>
+							<a href="" target="_blank">京ICP证041189号</a>
+						</span>
+						<span class="step">|</span>
+						<span>出版物经营许可证 新出发京批字第直0673号</span>
+						<span class="step">|</span>
+						<span>食品流通许可证：SP1101011010021855(1-1)</span>
+						<br />
+						<span>互联网药品信息服务资格证编号：(京)-非经营性-2012-0016</span>
+						<span class="step">|</span>
+						<span>京公网安备110101000001号</span>
+						<br />
+						<span>互联网违法和不良信息举报电话：4001066666-5 邮箱：
+							<a href="">service@cs.dangdang.com</a>
+						</span>
+						<br />
+						<span>
+							<a href="" target="_blank">网络出版服务许可证（总）网出证（京）字第049号</a>
+						</span>
+						<span>
+							<a href="" target="_blank">北京当当网信息技术有限公司</a>
+							，公司地址：北京市朝阳区北三环东路8号静安中心21层
+						</span>
+					</div>
+					<div class="footer_icon">
+						<div class="validator logo1">
+							<a href=""><img src="../img/validate_footer.gif"></a>
+						</div>
+						<div class="validator logo2">
+							<a href=""><img src="../img/footer2.png"></a>
+						</div>
+						<div class="validator logo3">
+							<a href=""><img src="../img/brand_footer.png"></a>
+						</div>
+						<div class="validator logo4">
+							<a href=""><img src="../img/hlwjbzx_footer.png"></a>
+						</div>
+						<div class="validator logo5">
+							<a href=""><img src="../img/cnnic_footer.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>

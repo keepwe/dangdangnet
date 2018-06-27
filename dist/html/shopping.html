@@ -2,8 +2,180 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>购物车-当当网</title>
+		<link rel="icon" href="../img/favicon.ico" type="image/x-icon" style="display: inline-block;width: 16px;height: 16px;">
+		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" style="display: inline-block;width: 16px;height: 16px;">
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shopping.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/shopping-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 	</head>
 	<body>
+		<!--header-->
+		<div id="hd_wrap">
+			<!--第一行，头部信息-->
+			<div id="tool">
+				<div id="tool_box">
+					<ul class="ddhead_nav">
+						<li class="ddhead_cart">
+							<a href="shopping.html" name="购物车">
+								<i class="icon_card"><img src="../img/cart1.png"/></i>
+								 购物车
+								 <b id="cart_items_count">0</b>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="" name="我的订单">
+								我的订单
+								<b id="order_num"></b>
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="" name="小说投稿">
+								小说投稿
+							</a>
+						</li>
+						<li class="ddhead_cart ddhead_phone">
+							<a href="" name="手机当当">
+								<i class="icon_card"></i>
+								 手机当当
+							</a>
+						</li>
+						<li class="my_dd">
+							<a target="_blank" href="" name="我的当当">
+								我的当当
+								<img class="xia" src="../img/xia.png"/>
+								<img class="shang" src="../img/shang.png"/>
+							</a>
+							<ul >
+								<span class="line">	
+								</span>
+								<li><a href="">积分抵现</a></li>
+								<li><a href="">我的收藏</a></li>
+								<li><a href="">我的余额</a></li>
+								<li><a href="">我的评论</a></li>
+								<li><a href="">礼券/礼品卡</a></li>
+							</ul>
+						</li>
+						<li class="caigou">
+							<a target="_blank" href="" name="企业采购">
+								企业采购
+								<img class="xia" src="../img/xia.png"/>
+								<img class="shang" src="../img/shang.png"/>
+							</a>
+							<ul>
+								<span class="line">	
+								</span>
+								<li><a href="">大宗采购</a></li>
+								<li><a href="">礼品卡采购</a></li>
+								<li><a href="">礼品卡激活</a></li>
+								<li><a href="">礼品卡使用</a></li>
+								<li><a href="">3C数码团购</a></li>
+							</ul>
+						</li>
+						<li class="serve">
+							<a target="_blank" href="" name="客户服务">
+								客户服务
+								<img class="xia" src="../img/xia.png"/>
+								<img class="shang" src="../img/shang.png"/>
+							</a>
+							<ul>
+								<span class="line">	
+								</span>
+								<li><a href="">帮助中心</a></li>
+								<li><a href="">自动退换货</a></li>
+								<li><a href="">自助发票</a></li>
+								<li><a href="">联系客服</a></li>
+								<li><a href="">我要投诉</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="ddhead_operate fr">
+						<span class="ddhead_welcome">欢迎光临当当，请</span>
+						<a class="login_links" href="login.html">登录</a> 
+						<a class="zhuce_links" href="register.html">成为会员</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div id="logo">
+			<div class="logo_line">
+				<a href="../index.html"><img src="../img/dd_logo.jpg"/></a>
+				<div class="shopping_procedure">
+					<span class="current">我的购物车</span>
+					<span>填写订单</span>
+					<span>完成订单</span>
+				</div>
+			</div>
+		</div>
+		<!--main-->
+		<div class="w960">
+			<div class="empty">
+				<div class="empty_tips">您的购物车还是空的，您可以：</div>
+				<a href="login.html" class="cart_login">立即登录</a>
+				登录后购物车的商品将保存到您的账号中，或者
+				<a class="guangguang" href="../index.html">去逛逛</a>
+			</div>
+			<div class="shop_ads">
+				<div class="ads_tab">为您推荐</div>
+				<div class="ads_box">
+					<a class="arrow" href=""></a>
+					<a class="arrow" href=""></a>
+					<ul class="ads_num">
+						<li class="pageTab on"></li>
+						<li class="pageTab on"></li>
+						<li class="pageTab on"></li>
+						<li class="pageTab on"></li>
+						<li class="pageTab on"></li>
+					</ul>
+					<div class="show_list">
+						
+					</div>
+				</div>
+			</div>
+			<div class="shop_ads">
+				<div class="ads_tab">最近浏览</div>
+				<div class="ads_box">
+					<a class="arrow" href=""></a>
+					<a class="arrow" href=""></a>
+					<ul class="ads_num">
+						<li class="pageTab on"></li>
+						<li class="pageTab on"></li>
+					</ul>
+					<div class="show_list">
+						
+					</div>
+				</div>
+			</div>
+			<div class="shop_ads">
+				<div class="ads_tab">推广商品</div>
+				<div class="ads_box">
+					<a class="arrow" href=""></a>
+					<a class="arrow" href=""></a>
+					<ul class="ads_num">
+						<li class="pageTab on"></li>
+						<li class="pageTab on"></li>
+						<li class="pageTab on"></li>
+						<li class="pageTab on"></li>
+						<li class="pageTab on"></li>
+					</ul>
+					<div class="show_list">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--footer-->		
+		<div class="footer">
+			<div id="footer_nav_box">
+				<div class="footer_copyright_s">
+					<span>Copyright (C) 当当网 2004-2014, All Rights Reserved</span>
+					<a href=""><img src="../img/validate.gif"/></a>
+					<span><a href="">京ICP证041189号</a></span>
+					<span>出版物经营许可证 新出发京批字第直0673号</span>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

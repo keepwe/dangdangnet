@@ -7,6 +7,8 @@
 		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" style="display: inline-block;width: 16px;height: 16px;">
 		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/regist-min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<!--头部-->
@@ -48,8 +50,9 @@
 						<div class="register_box_head">
 							<a href="" class="head_a head_a1">新用户注册</a>
 							<a href="" class="head_a">企业用户注册</a>
+							<!--企业注册未写-->
 							<span class="dd_more">
-								<a href="" class="home"> 当当首页</a>
+								<a href="../index.html" class="home"> 当当首页</a>
 								<a href="">注册帮助</a>
 							</span>
 						</div>
@@ -66,7 +69,7 @@
 									<tr>
 										<td class="tellpone">手机号码</td>
 										<td class="tp_box">
-											<input class="phone_register" type="text" placeholder="请输入您的手机号码"/>
+											<input id="user_phone" class="phone_register" type="text" placeholder="请输入您的手机号码"/>
 											<span id="spn_repassword_ok" class="icon_wrong"></span>
 											<span id="J_tipUsername" class="cue_warn">手机号可用于登录、找回密码、接收订单通知等服务</span>
 										</td>
@@ -74,7 +77,7 @@
 									<tr>
 										<td class="tellpone">登录密码</td>
 										<td class="tp_box">
-											<input class="phone_register" type="password" placeholder=""/>
+											<input id="user_pass" class="phone_register" type="password" placeholder=""/>
 											<span id="spn_repassword_ok" class="icon_wrong"></span>
 											<span id="J_tipUsername" class="cue_warn"><!--密码为6-20个字符，可由英文、数字及符号组成--></span>
 										</td>
@@ -91,7 +94,7 @@
 										<td class="tellpone">验证码</td>
 										<td class="tp_box">
 											<input class="phone_register" id="txt_vcode" type="password" placeholder="请输入验证码"/>
-											<a href="" class="code_pic" title="点击更换验证码"><img id="imgVcode" src="p/tmp_proxy.php?t=1529982653458"/></a>
+											<a href="" class="code_pic" title="点击更换验证码"><img id="imgVcode" src=""/></a>
 											<a href="" id="vcodeImgBtn" class="code_picww">换张图</a>
 											<span id="spn_repassword_ok class="icon_wrong""></span>
 											<span id="J_tipUsername" class="cue_warn"></span>
@@ -112,8 +115,8 @@
 									<tr>
 										<td class="tellpone">&nbsp</td>
 										<td class="tp_box">
-											<a id="J_submitRegister" href="" class="btn_login">立即注册</a>
-											<a id="J_submitRegisterUnclick" href="" class="btn_login">注册中...</a>
+											<span id="J_submitRegister" href="" class="btn_login">立即注册</span>
+											<span id="J_submitRegisterUnclick" href="" class="btn_login">注册中...</span>
 										</td>
 									</tr>
 								</tbody>
